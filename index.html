@@ -6,75 +6,113 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>home</title>
-  <link rel="stylesheet" href="static/styles/style.css">
-  <link rel="stylesheet" href="static/styles/conteiner.css">
-  <link rel="stylesheet" href="static/styles/nav.bar.css">
+  <link rel="stylesheet" href="1.css">
 </head>
   <body>
-    <section>
-        <div>
-          <div> 
-            <img src="main-image.png" alt="main-image.png"> 
-            <div> 
-              <img src="image-1.png" alt=""> 
-            </div>
-            <div> 
-              <img src="image-2.png" alt=""> 
-            </div>
-          </div>  
-        </div>
-        <div>
-          <h1>Fluted Contrast </h1>
-          <span> Mug / 33 cl</span>
-          <p>Fluted Contrast represents the perfect fusion between the 
-            aesthetic and the functional. The design is elegant and modern, 
-            created out of a deep respect for Royal British history and traditions</p>
-          <div>
-            <h2>Color options</h2>
-            <ul>
-              <li>
-                <div>
-                  
-                </div>
-              </li>
-              <li>
-                <div>
-                  
-                </div>
-              </li>
-              <li>
-                <div>
-                  
-                </div>
-              </li>
-              <li>
-                <div>
-                  
-                </div>
-              </li>
-              <li>
-                <div>
-                  
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div>
-              <h2>Quantity</h2>
-              <select name="Quantity" id="Quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-            <div>
-              <h2>Price</h2>
-              <span>Euro 39.00</span>
-            </div>
-          </div>
-          <button>Add To Basket</button>
-        </div>
-    </section>   
+    <header>
+      <span> 
+        IT-INCUBATOR
+      </span>
+    </header>
+    <section data-cy="hw1-section-main-pre">
+      <h1>
+      Павлов Константин Григорьевич
+      </h1>
+      <p>
+      Люблю путешествовать, читать , шахматы, смотреть познавательное видео. Играю с друзьями в футбол, волейбол. Зимой играю в хокей. Учусь в IT-INCUBATOR-е. Люблю HTML, CSS и всё что связанно с frontend разработкой.
+      </p>
+    </section>
+    <section data-cy="hw1-section-about-pre">  
+      <div>
+        <img src="111.jpg" alt="">
+      </div>
+    
+      <div>
+        <select name="" id="">
+          <option value="">Minsk</option>
+          <option selected="selected">Sankt-Peterburg</option>
+          <option value="">Brest</option>
+        </select>
+      </div>
+      <div data-cy="hw1-unordered-list-box-pre">
+        <h2> 
+          Любимые фреймворки
+        </h2>
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Vue</li>
+        </ul>
+      </div>
+      <div data-cy="hw1-ordered-list-box-pre">
+        <h2> 
+          Рейтинг любимых книг
+        </h2>
+        <ol>
+          <li>HTML5+CSS3. Основы современного web-дизайна </li>
+          <li>HTML5,CSS3 и JavaScript. Исчерпывающее руководство </li>
+          <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств</li>
+        </ol>
+      </div>
+      <div data-cy="hw1-skills-box-pre">
+        <h2> 
+          Мои скилы
+        </h2>
+        <input type="checkbox" id="" disabled checked/>
+        <label for="">HTML5</label>
+        <input type="checkbox" id="" disabled checked/>
+        <label for="">CSS3</label>
+        <input type="checkbox" id=""/>
+        <label for="">JavaScript</label>
+        <input type="checkbox" id=""/>
+        <label for="">Jquery</label>
+        <input type="checkbox" id=""/>
+        <label for="">React</label>  
+      </div>
+      <input name="новый скил" placeholder="новый скил"/>
+      <button type="submit">Добавить</button>
+      <hr>
+      <table data-cy="hw-about-table-pre">
+        <thead>
+          <tr>
+            <th scope="col">
+              <h3>П/п</h3>
+            </th>
+            <th scope="col"> 
+              <h3>Наименование</h3>
+            </th>
+            <th scope="col">
+              <h3>Количество</h3> 
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Монитор</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Клавиату</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Мышь</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Итого:</th>
+            <td>4</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <footer data-cy="hw-footer-pre">
+      <a href="https://it-incubator.io/">it-incubator</a>
+    </footer>   
   </body> 
 </html>
