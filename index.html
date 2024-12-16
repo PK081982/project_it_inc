@@ -5,8 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>home</title>
+  <!--<title>home</title>-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="1.css">
+
 </head>
   <body>
     <header>
@@ -14,19 +18,18 @@
         IT-INCUBATOR
       </span>
     </header>
-    <section data-cy="hw1-section-main-pre">
-      <h1>
+    <section class="main-section" data-cy="hw1-section-main-pre">
+      <h1 class="main-title">
       Павлов Константин Григорьевич
       </h1>
-      <p>
+      <p class="main-text">
       Люблю путешествовать, читать , шахматы, смотреть познавательное видео. Играю с друзьями в футбол, волейбол. Зимой играю в хоккей. Учусь в IT-INCUBATOR-е. Люблю HTML, CSS и всё что связанно с frontend разработкой.
       </p>
-    </section>
-    <section data-cy="hw1-section-about-pre">  
-      <div>
+      <div class="main-image">
         <img src="https://avatars.mds.yandex.net/get-mpic/3749045/img_id4318426776095528257.jpeg/orig" alt="">
       </div>
-    
+    </section>
+    <section class="about-section" data-cy="hw1-section-about-pre">  
       <div>
         <select >
           <option >Minsk</option>
@@ -35,27 +38,27 @@
         </select>
       </div>
       <div data-cy="hw1-unordered-list-box-pre">
-        <h2> 
+        <h2 class="section-title"> 
           Любимые фреймворки
         </h2>
-        <ul>
-          <li>React</li>
-          <li>Angular</li>
-          <li>Vue</li>
+        <ul class="frameworks-list">
+          <li class="frameworks-list">React</li>
+          <li class="frameworks-list">Angular</li>
+          <li class="frameworks-list">Vue</li>
         </ul>
       </div>
       <div data-cy="hw1-ordered-list-box-pre">
-        <h2> 
+        <h2 class="section-title"> 
           Рейтинг любимых книг
         </h2>
-        <ol>
-          <li>HTML5+CSS3. Основы современного web-дизайна </li>
-          <li>HTML5,CSS3 и JavaScript. Исчерпывающее руководство </li>
-          <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств</li>
+        <ol class="books-list">
+          <li class="books-list">HTML5+CSS3. Основы современного web-дизайна </li>
+          <li class="books-list">HTML5,CSS3 и JavaScript. Исчерпывающее руководство </li>
+          <li class="books-list">HTML5+CSS3. Разработка сайтов для любых браузеров и устройств</li>
         </ol>
       </div>
       <div data-cy="hw1-skills-box-pre">
-        <h2> 
+        <h2 class="section-title"> 
           Мои скилы
         </h2>
         <input type="checkbox"  disabled checked/>
@@ -68,11 +71,11 @@
         <label >Jquery</label>
         <input type="checkbox" />
         <label >React</label>  
-      </div>
-      <input name="новый скил" placeholder="Новый скилл"/>
-      <button type="submit">Добавить</button>
-      <hr>
-      <table data-cy="hw-about-table-pre" border="1">
+      </div >
+      <input class="text-field" name="новый скил" placeholder="Новый скилл"/>
+      <button class="btn" type="submit">Добавить</button>
+      <hr class="line">
+      <table data-cy="hw-about-table-pre">
         <thead>
           <tr>
             <th scope="col">П/п</th>
@@ -106,7 +109,7 @@
       </table>
     </section>
     <footer data-cy="hw-footer-pre">
-      <a href="https://it-incubator.io/">it-incubator</a>
+      <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>
     </footer>   
   </body> 
 </html>
