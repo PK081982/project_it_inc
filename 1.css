@@ -200,6 +200,7 @@ width: 300px;
 height: 196px;
 border: 1px solid #95A1BB;
 border-collapse: collapse;
+margin-bottom: 100px;
   /* Стили для таблицы */
 }
 
@@ -208,12 +209,11 @@ th, td {
   height: 40;
   border: 1px solid #95A1BB;
   text-indent: 14px;
-
+  margin-bottom: 100px;
 }
 
 footer {
   /* Стили для футера */
-  margin-top: 100px;
   background-color: #A3A7FF4D;
   width: 1440px;
   height: 70px;
