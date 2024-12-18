@@ -6,7 +6,8 @@
   /* Свойства для сброса начальных стилей элементов */
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #303030;
 }
 
 header {
@@ -23,7 +24,9 @@ header {
 
 header span {
   font-family: 'Inter';
-  
+  font-size: 20px;
+  font-weight: 700;
+  color:#FFFFFF;
   /* Стили для текста в хедере IT-INCUBATOR */
 }
 
@@ -33,6 +36,7 @@ header span {
   padding-top:60px;
   padding-bottom:60px;
   height: 1440 px;
+  width: 1440px;
   /* Стили для первой секции */
 }
 
