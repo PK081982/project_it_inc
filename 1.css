@@ -113,6 +113,7 @@ line-height: 29.05px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
+margin-bottom: 25;
 }
 
 .frameworks-list {
@@ -130,7 +131,6 @@ line-height: 19.36px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-margin-top: 54px;
 }
 
 .books-list {
@@ -142,19 +142,16 @@ gap: 0px;
 opacity: 0px;
 padding-left: 20px;
 list-style-type: decimal;
-margin-top: 35px;
 }
 
 .label {
   /* Стили для подписей чекбоксов */
-display: inline-block;
 font-size: 16px;
 font-weight: 400;
 line-height: 19.36px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-margin-top: 25px;
 }
 
 .text-field {
@@ -214,6 +211,8 @@ width: 300px;
 height: 196px;
 border: 1px solid #95A1BB;
 border-collapse: collapse;
+font-size: 14px;
+line-height: 16.94px;
   /* Стили для таблицы */
 }
 
@@ -222,17 +221,15 @@ th, td , th[scope=row] {
   height: 40;
   border: 1px solid #95A1BB;
   font-weight: 400;
-  font-size: 14px;
   text-align: left;
   padding-left: 15px;
+  width: 55px 134px 113px;
 }
 
 th[scope=col] {
   text-align: center; 
   vertical-align: middle;
-  font-size: 14px;
   font-weight: 700;
-  line-height: 16.94px;
   padding: 0;
   text-align: center;
   text-underline-position: from-font;
@@ -256,6 +253,6 @@ font-weight: 400;
 line-height: 16.94px;
 text-align: left;
 text-underline-position: from-font;
-text-decoration-skip-ink: none;
+text-decoration-line: none;
   /* Стили для футера */
 }
