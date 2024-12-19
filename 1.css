@@ -218,6 +218,7 @@ td {
   border: 1px solid #95A1BB;
   font-weight: 400;
   text-align: left;
+  padding: 12px 15px;
 }
 
 th {
@@ -233,7 +234,7 @@ footer {
   width: 1440px;
   height: 70px;
   top: 1977px;
-  padding-top: 26px 0; 
+  padding: 26px 0; 
 }
 
 .footer-link {
