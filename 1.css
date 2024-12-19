@@ -45,7 +45,7 @@ color: #fff;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   /* Стили для заголовка в первой секции */
 }
 
@@ -61,10 +61,7 @@ text-decoration-skip-ink: none;
 
 .main-image {
 max-width: 715px;
-height: 508px;
 top: 230px;
-gap: 0px;
-opacity: 0px;
 margin-bottom: 356px;
   /* Стили для изображения в первой секции */
 }
@@ -122,7 +119,7 @@ list-style-image: url("333.svg");
 width: Hug (80px)px;
 height: Hug (57px)px;
 top: 1284px;
-padding-left: 20px;
+padding: 0 20px;
 font-size: 16px;
 font-weight: 400;
 line-height: 19.36px;
@@ -138,7 +135,7 @@ height: Hug (57px)px;
 top: 1395px;
 gap: 0px;
 opacity: 0px;
-padding-left: 20px;
+padding: 0 20px;
 list-style-type: decimal;
 }
 
@@ -227,6 +224,7 @@ th {
   height: 40px;
   font-weight: 700;
   text-align: left;
+  padding: 12px 15px;
 }
 
 footer {
@@ -235,7 +233,7 @@ footer {
   width: 1440px;
   height: 70px;
   top: 1977px;
-  padding-top: 26px; 
+  padding-top: 26px 0; 
 }
 
 .footer-link {
