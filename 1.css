@@ -1,249 +1,197 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  }
-  /* Свойства для сброса начальных стилей элементов */
+}
+.container {
+  /*outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+  margin: 0 auto;
+  width: 100%;
+  /* 📍 Максимальная ширина для контейнера */
+}
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #303030;
 }
-
 header {
-  display: block;
-  background-color:#2965F1;
-  height:70px;
-  width:100vw;
-  /*margin: 1px;*/
-  /*padding: 1px;*/
-  /*border: px solid #2965F1;*/
-  line-height: 70px;
-  /* Стили для хедера */
+  background-color: #2965F1;
+  padding: 23px 0;
 }
-
 header span {
-font-weight: 700;
-font-size: 20px;
-color: #fff;
-  /* Стили для текста в хедере IT-INCUBATOR */
-}
-
-.main-section {
-  min-height: 100vh;
-  background-color:#FAFAFF;
-  padding-top:60px;
-  padding-bottom:60px;
-  height: 1024 px;
-  width: 1440px;
-  /* Стили для первой секции */
-}
-
-.main-title {
-  font-size: 48px;
   font-weight: 700;
-  line-height: 58.09px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 20px;
+  color: #fff;
+}
+.main-section {
+  background-color: #fafaff;
+  padding: 60px 0;
+  min-height: 100vh;
+  min-width: 1440;
+  /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+}
+.main-section .wrapper {
+  min-width: 1440;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+}
+.text-wrapper {
+  flex-basis: auto; width: 425 px;
+  /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
+}
+.main-title {
+  font-weight: 700;
+  font-size: 48px;
   margin-bottom: 20px;
-  /* Стили для заголовка в первой секции */
-}
+  width: 425px;
 
+}
 .main-text {
-font-size: 18px;
-font-weight: 400;
-line-height: 21.78px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-  /* Стили для текста в первой секции */
-}
-
-.main-image {
-max-width: 715px;
-top: 230px;
-margin-bottom: 356px;
-  /* Стили для изображения в первой секции */
-}
-
-
-.about-section {
-  height: 883;
-  top: 1094;
-  background-color:#FFFFFF;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  /* Стили для второй секции */
-}
-
-select {
-  top: 1194px;
-  width: 150px;
-  height: 36px;
-  border: 1px 0px 0px 0px;
-  gap: 0px;
-  border-color: #3030304D;
-  border-style: solid;
-  border-radius: 5px;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 19.36px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-left:12px;
-  padding-right: 12px;
-  line-height:36px;
-  -webkit-appearance: none;
-    appearance: none;
+  font-size: 18px;
+  width: 425px;
+}
+.main-image {
+  max-width: 715px;
+}
+.about-section {
+  background-color: #fff;
+  padding: 100px 0;
+}
+.about-section .wrapper {
+  padding: 0px 150px 0px;
+  /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+}
+select {
+  border: 1px solid #3030304d;
+  border-radius: 5px;
+  width: 150px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 16px;
+  appearance: none; 
   background-image: url("222.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  /* Стили для выпадающего списка */
+  background-position: right 12px top 50%;
+  margin: 0 0 60px;
 }
-
+select:hover,
+.text-field:hover {
+  border: 1px solid #2965F1;
+  /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+}
+.info-wrapper {
+  display: flex;
+  margin: 0px 0px 80px;
+  /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+}
 .section-title {
-  /* Стили для заголовков во второй секции */ 
-font-size: 24px;
-font-weight: 700;
-line-height: 29.05px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 25px;
 }
-
+.frameworks,
+.books {
+  min-width: 50%;
+  
+}
+.frameworks-list,
+.books-list {
+  gap: 150px;
+  /* 📍 Свойства flexbox для отступов между элементами в списках */
+}
 .frameworks-list {
-  /* Стили для маркированного списка во второй секции */
-list-style-image: url("333.svg");
-width: Hug (80px)px;
-height: Hug (57px)px;
-top: 1284px;
-padding: 0 20px;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.36px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+  font-weight: 400;
+  font-size: 16px;
+  list-style-image: url("333.svg");
+  padding-left: 20px;
+}
+.skills-block {
+display: flex;
+flex-direction: column-reverse;
+  /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+}
+.skills {
+min-width: 50%;
+display: flex;
+flex-direction: column;
+padding-bottom: 20px;
+  /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
 .books-list {
-  /* Стили для нумерованного списка во второй секции */
-width: Hug (670px)px;
-height: Hug (57px)px;
-top: 1395px;
-gap: 0px;
-opacity: 0px;
-padding: 0 20px;
-list-style-type: decimal;
+font-weight: 400;
+font-size: 16px;
+padding-left: 20px;
+width: 570px;
+height: 162px;
+
 }
 
 .label {
-  /* Стили для подписей чекбоксов */
-font-size: 16px;
-font-weight: 400;
-line-height: 19.36px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-}
-
-.text-field {
-  /* Стили для односточного поля ввода текста */
-width: 330px;
-height: 36px;
-top: 1525px;
-gap: 0px;
-border: 1px 0px 0px 0px;
-border-color: #3030304D;
-border-style: solid;
-border-radius: 5px;
-opacity: 0px;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.36px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-padding-left: 12px;
-}
-
-.btn {
- /* Стили для кнопки */
-background: #2965f1;
-width: 69px;
-height: 17px;
-top: 1535px;
-left: 368px;
-gap: 0px;
-opacity: 0px;
-border: 1px 0px 0px 0px;
-border-color: #3030304D;
-border-style: solid;
-border-radius: 5px;
-width: 125px;
-height: 36px;
-font-family: "Inter", sans-serif;
-font-weight: 700;
-font-size: 14px;
-color: #fff;
-}
-
-.line {
-  /* Стили для линии */
-top: 1621px;
-border: 1px solid rgba(48, 48, 48, 0.3);
-width: 100vw;
-height: 0px;
-gap: 0px;
-margin-top: 60px;
-margin-bottom: 60px;
-}
-
-table {
-width: 300px;
-height: 196px;
-border: 1px solid #95A1BB;
-border-collapse: collapse;
-font-size: 14px;
-line-height: 16.94px;
-vertical-align: middle;
-  /* Стили для таблицы */
-}
-
-td {
-  /* Стили для ячеек таблицы */
-  height: 40px;
-  border: 1px solid #95A1BB;
   font-weight: 400;
-  text-align: left;
-  padding: 12px 15px;
+  font-size: 16px;
+  padding-bottom: 20px;
+ 
 }
-
-th {
-  height: 40px;
+form {
+  margin-bottom: 30px;
+}
+.text-field {
+  border: 1px solid rgba(48, 48, 48, 0.3);
+  border-radius: 5px;
+  max-width: 330px;
+  width: 100%;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  width: 125px;
+  height: 36px;
+  background-color: #2965f1;
   font-weight: 700;
-  text-align: left;
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #2965F1E5;
+  cursor: pointer; 
+  /* 📍 Стили для кнопки при наведении курсора */
+}
+.line {
+  margin: 60px 0;
+}
+table {
+  border: 1px solid #95a1bb;
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 auto;
+}
+th, td {
   padding: 12px 15px;
 }
-
 footer {
-  /* Стили для футера */
-  background-color: #A3A7FF4D;
-  width: 1440px;
-  height: 70px;
-  top: 1977px;
-  padding: 26px 0; 
+  background-color: rgba(163, 167, 255, 0.3);
+  padding: 26px 0;
+  text-align: center;
+  /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
-
 .footer-link {
-color: #2965F1;
-font-size: 14px;
-font-weight: 400;
-line-height: 16.94px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-line: none;
-  /* Стили для футера */
+  font-weight: 400;
+  font-size: 14px;
+  color: #2965f1;
+  text-decoration: none;
+ 
+}
+.footer-link:hover {
+  text-decoration: underline;
+  /* 📍 Стили для ссылки при наведении курсора */
 }
