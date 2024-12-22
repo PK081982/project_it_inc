@@ -63,17 +63,21 @@ header span {
   flex-direction: column;
   background-color: #fff;
   padding: 100px 0;
+  flex-wrap: wrap;
 }
 
 .about-section .wrapper {
   padding: 0px 150px 0px;
-  
-  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 select {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 60;
   border: 1px solid #3030304d;
   border-radius: 5px;
   width: 150px;
@@ -83,9 +87,7 @@ select {
   background-image: url("222.svg");
   background-repeat: no-repeat;
   background-position: right 12px top 50%;
-  column-gap: 60;
-  box-sizing: border-box;
-  margin: 0 0 60px;
+
 }
 
 select:hover,
@@ -95,7 +97,8 @@ select:hover,
 }
 .info-wrapper {
   display: flex;
-  margin: 0px 0px 80px;
+  flex-direction: row;
+  margin: 0px 0px 20px;
   /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
 .section-title {
@@ -211,4 +214,7 @@ footer {
 .footer-link:hover {
   text-decoration: underline;
   /* 📍 Стили для ссылки при наведении курсора */
+}
+.wrapper{
+  gap: 60px;
 }
