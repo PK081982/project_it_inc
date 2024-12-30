@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 .container {
-  /*outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
-  margin: 0 auto;
-  max-width: 1140px;
+  width: 100%;
+  margin: 0px auto;
+  /*max-width: 1180px;*/
   /* 📍 Максимальная ширина для контейнера */
 }
 body {
   font-family: "Inter", sans-serif;
   color: #303030;
 }
-header {
+header {/* coment*/
   background-color: #2965F1;
   padding: 23px 0;
 }
@@ -27,60 +27,47 @@ header span {
   background-color: #fafaff;
   padding: 60px 0;
   min-height: 100vh;
-  min-width: 1440;
   align-items:center;
   /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 .main-section .wrapper {
-  min-width: 1440;
   display:flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
 }
 .text-wrapper {
-  flex-basis: auto; 
-  max-width: 425px;
+  max-width: 420px;
   /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
 }
 .main-title {
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 20px;
-  width: 425px;
-
 }
 .main-text {
   font-weight: 400;
   font-size: 18px;
-  width: 425px;
 }
 .main-image {
   max-width: 715px;
 }
 .about-section {
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
   padding: 100px 0;
-  flex-wrap: wrap;
 }
 
 .about-section .wrapper {
-  padding: 0px 150px 0px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  gap:60px;
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 select {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  column-gap: 60;
-  border: 1px solid #3030304d;
+  border: 1px solid rgba(48, 48, 48, 0.3);
   border-radius: 5px;
   width: 150px;
+  padding: 8px 12px;
   font-weight: 400;
   font-size: 16px;
   appearance: none; 
@@ -97,12 +84,9 @@ select:hover,
 }
 .info-wrapper {
   display: flex;
-  flex-direction: row;
-  margin: 0px 0px 20px;
   /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
 .section-title {
-  display: flex;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 25px;
@@ -120,7 +104,6 @@ select:hover,
   /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 .frameworks-list {
-  display: flex;
   font-weight: 400;
   font-size: 16px;
   list-style-image: url("333.svg");
@@ -133,7 +116,6 @@ flex-direction: column-reverse;
   /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 .skills {
-min-width: 50%;
 display: flex;
 flex-direction: column;
 gap: 20px;
@@ -144,19 +126,15 @@ gap: 20px;
 font-weight: 400;
 font-size: 16px;
 padding-left: 20px;
-width: 570px;
-height: 162px;
 
 }
 
 .label {
   font-weight: 400;
   font-size: 16px;
-  padding-bottom: 20px;
- 
 }
 form {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .text-field {
   border: 1px solid rgba(48, 48, 48, 0.3);
@@ -172,7 +150,7 @@ form {
 .btn {
   border: none;
   border-radius: 5px;
-  width: 125px;
+  min-width: 125px;
   height: 36px;
   background-color: #2965f1;
   font-weight: 700;
@@ -215,6 +193,112 @@ footer {
   text-decoration: underline;
   /* 📍 Стили для ссылки при наведении курсора */
 }
-.wrapper{
+
+
+
+
+
+
+/* Стили для адаптива под планшеты */
+@media screen and (max-width: 1200px) {
+    .main-section {
+      min-height: 850px;
+      padding: 0 0 100px;
+      display: flex;
+      flex-direction: column-reverse;
+        /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */
+    }
+
+    .main-section .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 20px;
+      padding-left: 20px;
+        /* 📍 Свойства для расположения элементов и отступа между ними */
+    }
+
+    .main-image {
+    max-width: 728px;
+    margin: 0 0 60px;
+        /* 📍 Максимальная ширина для главного изображения в % */
+    }
+
+    .text-wrapper {
+    max-width: 728px;
+    text-align: left;
+        /* 📍 Максимальная ширина для блока с текстом */
+    }
+
+    .about-section {
+      max-width: 768px;
+      padding: 60px 0;
+    /* 📍 Внутренний отступ сверху и снизу */
+    }
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 60px;
+    /* 📍 Отступ между изображением и блоком с текстом */
+  }
+  select {
+  margin-left: 20px;
+  }
+  .skills-wrapper {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
   gap: 60px;
+      /* 📍 Свойства для расположения 2-x списков и отступа между ними */
+  }
+}
+
+/* Стили для адаптива под мобильные устройства */
+@media screen and (max-width: 576px) {
+  body {
+    min-width:375px;
+  }
+  .main-section {
+    padding: 60px 0 100px;
+
+      /* 📍 Внутренние отступы сверху и снизу */
+  }
+
+  .main-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+      /* 📍 Отступ между изображением и блоком с текстом */
+  }
+
+  .main-title {
+font-size: 36px;
+font-weight: 700;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+      /* 📍 Размер шрифта */
+  }
+
+  .about-section .wrapper,
+  .info-wrapper {
+    gap: 50px;
+      /* 📍 Отступ между изображением и блоком с текстом */
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+  }
 }
