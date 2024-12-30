@@ -6,12 +6,14 @@
 .container {
   width: 100%;
   margin: 0px auto;
+  padding: 0 20px;
   /*max-width: 1180px;*/
   /* 📍 Максимальная ширина для контейнера */
 }
 body {
   font-family: "Inter", sans-serif;
   color: #303030;
+  min-width:375px;
 }
 header {/* coment*/
   background-color: #2965F1;
@@ -194,7 +196,11 @@ footer {
   /* 📍 Стили для ссылки при наведении курсора */
 }
 
-
+form {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
 
 
 
@@ -212,19 +218,19 @@ footer {
     .main-section .wrapper {
       display: flex;
       flex-direction: column-reverse;
-      gap: 20px;
-      padding-left: 20px;
+      gap: 60px;
+      padding: 0 20px;
         /* 📍 Свойства для расположения элементов и отступа между ними */
     }
 
     .main-image {
-    max-width: 728px;
+    max-width: 100%;
     margin: 0 0 60px;
         /* 📍 Максимальная ширина для главного изображения в % */
     }
 
     .text-wrapper {
-    max-width: 728px;
+    max-width: 560px;
     text-align: left;
         /* 📍 Максимальная ширина для блока с текстом */
     }
@@ -237,16 +243,16 @@ footer {
   .info-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin: 0 20px;
     gap: 60px;
     /* 📍 Отступ между изображением и блоком с текстом */
   }
   select {
-  margin-left: 20px;
+  margin:0  20px;
   }
   .skills-wrapper {
     text-align: left;
-    margin-left: 20px;
+    margin: 0 20px;
   }
 
 
@@ -265,11 +271,9 @@ footer {
 
 /* Стили для адаптива под мобильные устройства */
 @media screen and (max-width: 576px) {
-  body {
-    min-width:375px;
-  }
+  
   .main-section {
-    padding: 60px 0 100px;
+    padding: 30px 0 60px;
 
       /* 📍 Внутренние отступы сверху и снизу */
   }
@@ -293,7 +297,7 @@ text-decoration-skip-ink: none;
 
   .about-section .wrapper,
   .info-wrapper {
-    gap: 50px;
+    gap: 40px;
       /* 📍 Отступ между изображением и блоком с текстом */
   }
   form {
